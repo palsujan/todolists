@@ -1,8 +1,17 @@
 import React from 'react'
 
-const Todolist = ({filteredData}) => {
+const Todolist = ({todos}) => {
   return (
-    <div>Todolist</div>
+    <div className='todo-row'>
+        {todos.map((todo)=>(
+            <div key={todo?.id} className="todo-col">
+                <p>
+                    UserId: {todo.id}
+                </p>
+                <p>{todo?.todo}</p>
+            </div>
+        ))}
+    </div>
   )
 }
 

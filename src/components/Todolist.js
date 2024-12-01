@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todolist = () => {
+const Todolist = ({filteredData}) => {
   return (
     <div>Todolist</div>
   )

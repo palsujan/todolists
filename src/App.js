@@ -16,18 +16,21 @@ function App() {
           }
           const data = await response.json();
           console.log(data);
+          setTodos(data.todos);
       } catch(error){
         console.log("Error", error);
       }
     }
     fetchData();
   },[]);
-  // const filteredData = todos.filter(()=>)
+  const filteredData = todos.filter((todo) =>
+    todo.todo.toLowerCase().includes(search.toLowerCase())
+  );
   return (
     <div className="App">
       <h1>Text Center</h1>
       <SearchInput search={search} setSearch={setSearch}/>
-      <Todolist  />
+      <Todolist  todos={filteredData}/>
     </div>
   );
 }

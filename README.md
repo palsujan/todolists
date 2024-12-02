@@ -1,6 +1,10 @@
 - Fetch API Data
 - Create Search Functionality
 
+## Screenshot
+
+![Search Todos List Screenshot](./screenshot.png)
+
 -- All code are in one Signle page below here
 
     import "./styles.css";

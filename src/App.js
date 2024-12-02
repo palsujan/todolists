@@ -28,9 +28,11 @@ function App() {
   );
   return (
     <div className="App">
-      <h1>Text Center</h1>
-      <SearchInput search={search} setSearch={setSearch}/>
-      <Todolist  todos={filteredData}/>
+      <div className="container">
+          <h1>Text Center</h1>
+          <SearchInput search={search} setSearch={setSearch}/>
+          <Todolist  todos={filteredData}/>
+      </div>
     </div>
   );
 }
